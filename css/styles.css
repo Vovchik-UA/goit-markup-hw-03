@@ -1,0 +1,223 @@
+
+:root {
+    --iris: #4D5AE5;
+    --ocean: #404BBF;
+    --navy-blue: #2E2F42;
+    --slate: #434455;
+    --white: #FFFFFF;
+    --cornflower:#E7E9FC;
+    --cloud: #F4F4FD;
+
+}
+
+body {
+    font-family:"Roboto", sans-serif;
+    color: var(--slate);
+    background-color: var(--white);
+}
+
+.header-page .home-link {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris);
+    text-decoration: none;
+}
+.header-page .home-link-accent {
+    color: var(--navy-blue);
+}
+
+.header-nav .link {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+    text-decoration: none;
+}
+.header-nav .link:hover {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--ocean);
+    text-decoration: none;
+}
+.header-nav .link:active {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--ocean);
+    text-decoration: none;
+}
+.header-nav .link:focus {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--ocean);
+    text-decoration: none;
+}
+
+.header-address {
+    font-style: normal;
+}
+
+.header-address .address-list .link {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+    text-decoration: none;
+    font-style: normal;
+}
+.header-address .address-list .link:hover {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--ocean);
+    text-decoration: none;
+    font-style: normal;
+}
+.header-address .address-list .link:focus {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--ocean);
+    text-decoration: none;
+    font-style: normal;
+}
+
+.section-hero {
+    background-color: var(--navy-blue);
+}
+
+.section-hero .page-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--white);
+}
+
+.section-hero .page-order-btn {
+    font-family: inherit;
+    background: var(--iris);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    cursor: pointer;
+}
+.section-hero .page-order-btn:hover {
+    font-family: inherit;
+    background: var(--ocean);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white);
+}
+.section-hero .page-order-btn:focus {
+    font-family: inherit;
+    background: var(--ocean);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white);
+}
+
+.section-benefits .section-title{
+    visibility: hidden;
+}
+
+.list-title {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+}
+
+.list-desc {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+}
+
+.section-team{
+    background: var(--cloud);
+}
+
+.section-team .section-title{
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--navy-blue);
+}
+
+.section-team .section-list .list-box {
+    background: var(--white);
+}
+
+.section-team .list-title{
+    text-align: center;
+}
+
+.section-team .list-desc {
+    text-align: center;
+}
+
+.section-portfolio .section-title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--navy-blue);
+}
+
+.section-portfolio .section-list .list-box {
+    background: var(--white);
+}
+
+.footer-page {
+    background: var(--navy-blue);
+}
+
+.footer-page .home-link {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris);
+    text-decoration: none;
+}
+.footer-page .home-link-accent {
+    color: var(--cloud);
+}
+
+.footer-page .footer-desc {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--cloud);
+}
