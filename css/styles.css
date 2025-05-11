@@ -16,6 +16,59 @@ body {
     background-color: var(--white);
 }
 
+/* reset */
+ul, ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* common */
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* header */
+.header-page {
+    border-bottom: 1px solid var(--cornflower);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.address-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+}
+
+
+
 .header-page .home-link {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -31,7 +84,9 @@ body {
     color: var(--navy-blue);
 }
 
-.header-nav .link {
+.header-nav-list .link {
+    display: block;
+    padding: 24px 0;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -40,7 +95,7 @@ body {
     color: var(--navy-blue);
     text-decoration: none;
 }
-.header-nav .link:hover {
+.header-nav-list .link:hover, .header-nav-list .link:active, .header-nav-list .link:focus {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -49,30 +104,16 @@ body {
     color: var(--ocean);
     text-decoration: none;
 }
-.header-nav .link:active {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--ocean);
-    text-decoration: none;
-}
-.header-nav .link:focus {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--ocean);
-    text-decoration: none;
-}
+
 
 .header-address {
     font-style: normal;
+    margin-left: auto;
 }
 
 .header-address .address-list .link {
+    display: block;
+    padding: 24px 0;
     font-family: inherit;
     font-size: 16px;
     line-height: 1.5;
@@ -81,7 +122,7 @@ body {
     text-decoration: none;
     font-style: normal;
 }
-.header-address .address-list .link:hover {
+.header-address .address-list .link:hover, .header-address .address-list .link:focus {
     font-family: inherit;
     font-size: 16px;
     line-height: 1.5;
@@ -90,14 +131,11 @@ body {
     text-decoration: none;
     font-style: normal;
 }
-.header-address .address-list .link:focus {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--ocean);
-    text-decoration: none;
-    font-style: normal;
+
+.hero-container {
+    display: flex;
+    padding: 188px 0;
+    flex-direction: column;
 }
 
 .section-hero {
@@ -110,9 +148,24 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--white);
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 48px;
 }
 
 .section-hero .page-order-btn {
+    margin-top: 0;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    margin-left: auto;
+    margin-right: auto;
+
     font-family: inherit;
     background: var(--iris);
     font-weight: 500;
@@ -120,8 +173,15 @@ body {
     letter-spacing: 0.04em;
     color: var(--white);
     cursor: pointer;
+
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: var(--iris);
 }
-.section-hero .page-order-btn:hover {
+.section-hero .page-order-btn:hover, .section-hero .page-order-btn:focus {
     font-family: inherit;
     background: var(--ocean);
     font-weight: 500;
@@ -129,13 +189,16 @@ body {
     letter-spacing: 0.04em;
     color: var(--white);
 }
-.section-hero .page-order-btn:focus {
-    font-family: inherit;
-    background: var(--ocean);
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--white);
+
+
+.benefits-container .section-list {
+    display: flex;
+    padding: 120px 0;
+    gap: 24px;
+}
+ 
+.section-list .benefits-list {
+    width: calc((100% - 72px) / 4);
 }
 
 .section-benefits .section-title{
@@ -158,6 +221,22 @@ body {
     letter-spacing: 0.02em;
     color: var(--slate);
 }
+.section-team {
+    padding: 120px 0;
+}
+
+.team-container .section-title {
+    margin-bottom: 72px;
+}
+
+.team-container .section-list {
+    display: flex;
+    gap: 24px;
+}
+
+.team-container .section-list .list-box {
+    width: calc((100% - 72px) / 4);
+}
 
 .section-team{
     background: var(--cloud);
@@ -174,6 +253,7 @@ body {
 
 .section-team .section-list .list-box {
     background: var(--white);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .section-team .list-title{
@@ -182,6 +262,42 @@ body {
 
 .section-team .list-desc {
     text-align: center;
+}
+
+.section-portfolio {
+    padding: 120px 0;
+}
+
+.section-portfolio .section-title {
+    margin-bottom: 72px;
+}
+
+.portfolio-container .section-list {
+    display: flex;
+    row-gap: 48px;
+    column-gap: 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.portfolio-container .section-list .list-box {
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolio-container .section-list .list-box .list-images {
+    margin-bottom: 32px;
+}
+
+.portfolio-container .section-list .list-box .list-title {
+    margin-top: 0;
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+
+.portfolio-container .section-list .list-box .list-desc {
+    margin-top: 0;
+    margin-left: 16px;
+    margin-bottom: 32px;
 }
 
 .section-portfolio .section-title {
@@ -195,16 +311,27 @@ body {
 
 .section-portfolio .section-list .list-box {
     background: var(--white);
+    border: 1px solid var(--cornflower);
 }
 
 .footer-page {
+    padding: 100px 0;
     background: var(--navy-blue);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.footer-container .footer-desc {
+    max-width: 264px;
 }
 
 .footer-page .home-link {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-style: bold;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
