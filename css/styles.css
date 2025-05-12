@@ -10,10 +10,27 @@
 
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 body {
     font-family:"Roboto", sans-serif;
     color: var(--slate);
     background-color: var(--white);
+}
+
+img {
+    display: block;
 }
 
 /* reset */
@@ -134,7 +151,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .hero-container {
     display: flex;
-    padding: 188px 0;
+    padding-top: 188px;
+    padding-bottom: 188px;
     flex-direction: column;
 }
 
@@ -152,13 +170,17 @@ h1, h2, h3, h4, h5, h6, p {
     margin-left: auto;
     margin-right: auto;
 
+    max-width: 496px;
+
     margin-bottom: 48px;
 }
 
 .section-hero .page-order-btn {
     margin-top: 0;
 
-    display: flex;
+    border: none;
+
+    display: block;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
@@ -193,7 +215,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .benefits-container .section-list {
     display: flex;
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
     gap: 24px;
 }
  
@@ -201,8 +224,12 @@ h1, h2, h3, h4, h5, h6, p {
     width: calc((100% - 72px) / 4);
 }
 
-.section-benefits .section-title{
-    visibility: hidden;
+.section-list .benefits-list .list-title {
+    margin-bottom: 8px;
+}
+
+.section-list .benefits-list .list-desc {
+    margin-top: 0;
 }
 
 .list-title {
@@ -222,7 +249,8 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--slate);
 }
 .section-team {
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team-container .section-title {
@@ -265,7 +293,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .section-portfolio {
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .section-portfolio .section-title {
@@ -315,7 +344,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .footer-page {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background: var(--navy-blue);
 }
 
@@ -330,6 +360,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .footer-page .home-link {
+    display: inline-block;
+    margin-bottom: 16px;
+
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -344,6 +377,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .footer-page .footer-desc {
+    margin-top: 0;
+    
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--cloud);
