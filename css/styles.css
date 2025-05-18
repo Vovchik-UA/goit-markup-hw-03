@@ -262,8 +262,12 @@ h1, h2, h3, h4, h5, h6, p {
     gap: 24px;
 }
 
-.team-container .section-list .list-box {
-    width: calc((100% - 72px) / 4);
+.team-container .section-list .team-card {
+    min-width: calc((100% - 72px) / 4);
+}
+
+.box-container .team-card {
+    padding-bottom: 32px;
 }
 
 .section-team{
@@ -279,17 +283,23 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--navy-blue);
 }
 
-.section-team .section-list .list-box {
+.section-team .section-list .team-card {
     background: var(--white);
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.section-team .list-title{
+.section-team .list-images {
+    margin-bottom: 32px;
+}
+
+.section-team .list-title {
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .section-team .list-desc {
     text-align: center;
+    margin-bottom: 32px;
 }
 
 .section-portfolio {
