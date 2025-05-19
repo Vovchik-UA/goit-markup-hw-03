@@ -50,6 +50,7 @@ h1, h2, h3, h4, h5, h6, p {
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
+    border-top: none;
 }
 
 /* header */
@@ -365,8 +366,12 @@ h1, h2, h3, h4, h5, h6, p {
     max-width: 264px;
 }
 
-.footer-page .home-link {
+.footer-page .footer-container a {
     display: inline-block;
+}
+
+
+.footer-page .home-link {
     margin-bottom: 16px;
 
     font-family: "Raleway", sans-serif;
