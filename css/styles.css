@@ -149,9 +149,10 @@ h1, h2, h3, h4, h5, h6, p {
     font-style: normal;
 }
 
-.section-hero .hero-container {
+.section-hero {
     display: flex;
-    padding: 188px 0 188px;
+    padding-top: 188px;
+    padding-bottom: 188px;
     flex-direction: column;
 }
 
@@ -211,11 +212,14 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--white);
 }
 
+.section-benefits {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .benefits-container .section-list {
     display: flex;
-    padding-top: 120px;
-    padding-bottom: 120px;
+
     gap: 24px;
 }
  
@@ -318,16 +322,15 @@ h1, h2, h3, h4, h5, h6, p {
     flex-wrap: wrap;
 }
 
-.portfolio-container .section-list .list-box {
-    width: calc((100% - 48px) / 3);
+.portfolio-container .section-list .portfolio-card {
+    min-width: calc((100% - 48px) / 3);
 }
 
 .portfolio-container .section-list .list-box .list-images {
-    margin-bottom: 32px;
 }
 
 .portfolio-container .section-list .list-box .list-title {
-    margin-top: 0;
+    margin-top: 32px;
     margin-left: 16px;
     margin-bottom: 8px;
 }
@@ -347,7 +350,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--navy-blue);
 }
 
-.section-portfolio .section-list .list-box {
+.section-portfolio .section-list .portfolio-card {
     background: var(--white);
     border: 1px solid var(--cornflower);
 }
